@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container{
+                border: solid 1px red;
+                padding: 10px;
+            }
+
+            .item{
+                border: solid 1px blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Align-self - row wrap</h1>
+        <div class="container" 
+        style="
+        min-height: 140px;
+        max-width: 140px;
+        display: flex;
+        flex-flow: row wrap;  /* (row) Padrão não era necessario colocar */
+        justify-content: space-between; 
+        align-items: center;  
+        align-content: space-around; 
+        "
+        >
+            <div class="item" style="order: 0; align-self: stretch;">Item 1</div>
+            <div class="item" style="order: 10; align-self: flex-end;">Item 2</div>
+            <div class="item" style="order: 0; align-self: flex-start;">Item 3</div>
+            <div class="item" style="order: -10; min-height: 50px;">Item 4</div>
+            <div class="item" style="order: 5; min-height: 75px;">Item 5</div>
+            <div class="item" style="order: 12;">Item 6</div>
+        </div>
+
+        <h1>Align-self - column wrap</h1>
+        <div class="container" 
+        style="
+        min-height: 70px;
+        max-height: 70px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between; 
+        align-items: center;  
+        align-content: space-around; 
+        "
+        >
+            <div class="item" style="order: 0; align-self: flex-start;">Item 1</div>
+            <div class="item" style="order: 10; align-self: stretch;">Item 2</div>
+            <div class="item" style="order: 0; align-self: flex-end;">Item 3</div>
+            <div class="item" style="order: -10; min-width: 90px;">Item 4</div>
+            <div class="item" style="order: 5; min-width: 110px;">Item 5</div>
+            <div class="item" style="order: 12; align-self: center;">Item 6</div>
+        </div>
+    </body>
+</html>

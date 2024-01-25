@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container{
+                border: solid 1px red;
+            }
+
+            .item{
+                border: solid 1px blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flex-shrink - row wrap</h1>
+        <div class="container" 
+        style="
+        width: 300px;
+        display: flex;
+        flex-flow: row nowrap;  /* (row) Padrão não era necessario colocar */
+        justify-content: space-between; 
+        align-items: center;  
+        align-content: space-around; 
+        "
+        >
+            <div class="item" style="width: 120px;  flex-shrink: 1;">Item 1</div>
+            <div class="item" style="width: 120px; flex-shrink: 1;">Item 2</div>
+            <div class="item" style="width: 120px; flex-shrink: 1;">Item 3</div>
+        </div>
+
+        <h1>Flex-shrink - row wrap 2</h1>
+        <div class="container" 
+        style="
+        width: 300px;
+        display: flex;
+        flex-flow: row nowrap;  /* (row) Padrão não era necessario colocar */
+        justify-content: space-between; 
+        align-items: center;  
+        align-content: space-around; 
+        "
+        >
+            <div class="item" style="width: 120px;  flex-shrink: 1;">Item 1</div>
+            <div class="item" style="width: 120px; flex-shrink: 2;">Item 2</div>
+            <div class="item" style="width: 120px; flex-shrink: 10;">Item 3</div>
+        </div>
+
+        <h1>Flex-shrink - column wrap</h1>
+        <div class="container" 
+        style="
+        height: 180px; 
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between; 
+        align-items: center;  
+        align-content: space-around; 
+        "
+        >
+        <div class="item" style="height: 80px; flex-shrink: 2;  ">Item 1</div>
+        <div class="item" style="height: 80px; flex-shrink: 3; ">Item 2</div>
+        <div class="item" style="height: 80px; flex-shrink: 5; ">Item 3</div>
+        </div>
+    </body>
+</html>

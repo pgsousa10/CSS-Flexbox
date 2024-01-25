@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container{
+                border: solid 1px red;
+            }
+
+            .item{
+                border: solid 1px blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Align-content: space-evenly - row wrap</h1>
+        <div class="container" 
+        style="
+        min-height: 140px;
+        display: flex;
+        flex-flow: row wrap;  /* (row) Padrão não era necessario colocar */
+        justify-content: space-between; 
+        align-items: center;  
+        align-content: space-evenly; 
+        "
+        >
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+            <div class="item">Item 7</div>
+            <div class="item">Item 8</div>
+            <div class="item">Item 9</div>
+            <div class="item">Item 10</div>
+            <div class="item">Item 11</div>
+            <div class="item">Item 12</div>
+            <div class="item">Item 13</div>
+        </div>
+
+        <h1>Align-content: space-evenly - column wrap</h1>
+        <div class="container" 
+        style="
+        min-height: 60px;
+        max-height: 60px;
+        display: flex;
+        flex-flow: column wrap; 
+        justify-content: space-between; 
+        align-items: center;  
+        align-content: space-evenly; 
+        "
+        >
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+            <div class="item">Item 7</div>
+            <div class="item">Item 8</div>
+        </div>
+    </body>
+</html>

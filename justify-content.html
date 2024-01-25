@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container{
+                border: solid 1px red;
+                padding: 10px;
+            }
+
+            .item{
+                border: solid 1px blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Justify-content: flex-start (padrão) - rowrap</h1>
+        <div class="container" 
+        style="
+        max-width: 200px;
+        display: flex;
+        flex-flow: row wrap; /* (row) Padrão não era necessario colocar */
+        justify-content: flex-start; /* Padrão não era necessario colocar */
+        "
+        >
+            <div class="item">Item 1 Aumentando o conteudo</div>
+            <div class="item" style="padding: 0px 30px 0px 30px;">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+
+        <h1>Justify-content: flex-end - row wrap</h1>
+        <div class="container" 
+        style="
+        max-width: 200px;
+        display: flex;
+        flex-flow: row wrap; /* (row) Padrão não era necessario colocar */
+        justify-content: flex-end;
+        "
+        >
+            <div class="item">Item 1 Aumentando o conteudo</div>
+            <div class="item" style="padding: 0px 30px 0px 30px;">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+
+        <h1>Justify-content: center - row wrap</h1>
+        <div class="container" 
+        style="
+        max-width: 200px;
+        display: flex;
+        flex-flow:  wrap;
+        justify-content: center;
+        "
+        >
+            <div class="item">Item 1 Aumentando o conteudo</div>
+            <div class="item" style="padding:0px 30px 0px 0px">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+
+        <h1>Justify-content: flex-start (padrão) - column wrap</h1>
+        <div class="container" 
+        style="
+        max-height: 100px;
+        min-height: 100px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start; /* Padrão não era necessario colocar */
+        "
+        >
+            <div class="item">Item 1 Aumentando o conteudo</div>
+            <div class="item" style="padding:30px 0px 30px 0px">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+
+        <h1>Justify-content: flex-end - column wrap</h1>
+        <div class="container" 
+        style="
+        max-height: 100px;
+        min-height: 100px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        "
+        >
+            <div class="item">Item 1 Aumentando o conteudo</div>
+            <div class="item" style="padding:30px 0px 30px 0px">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+
+        <h1>Justify-content: center - column wrap</h1>
+        <div class="container" 
+        style="
+        max-height: 100px;
+        min-height: 100px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        "
+        >
+            <div class="item">Item 1 Aumentando o conteudo</div>
+            <div class="item" style="padding:30px 0px 30px 0px">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+    </body>
+</html>

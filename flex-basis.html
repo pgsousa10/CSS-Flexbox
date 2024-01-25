@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container{
+                border: solid 1px red;
+            }
+
+            .item{
+                border: solid 1px blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flex-basis - row wrap</h1>
+        <div class="container" 
+        style="
+        width: 300px;
+        display: flex;
+        flex-flow: row nowrap;  /* (row) Padrão não era necessario colocar */
+        justify-content: space-between; 
+        align-items: center;  
+        align-content: space-around; 
+        "
+        >
+            <div class="item" style="flex-grow: 0; flex-shrink: 1; flex-basis: 0;">Item 1 - Teste</div>
+            <div class="item" style="flex-grow: 0; flex-shrink: 1; flex-basis: auto;">Item 2</div>
+            <div class="item" style="flex-grow: 0; flex-shrink: 1; flex-basis: 120px;">Item 3</div>
+        </div>
+
+        <h1>Flex-basis - column wrap</h1>
+        <div class="container" 
+        style="
+        height: 180px;
+        display: flex;
+        flex-flow: column nowrap;  /* (row) Padrão não era necessario colocar */
+        justify-content: space-between; 
+        align-items: center;  
+        align-content: space-around; 
+        "
+        >
+            <div class="item" style="flex-grow: 0; flex-shrink: 1; flex-basis: 0;">Item 1 - Teste</div>
+            <div class="item" style="flex-grow: 0; flex-shrink: 1; flex-basis: auto;">Item 2</div>
+            <div class="item" style="flex-grow: 0; flex-shrink: 1; flex-basis: 120px;">Item 3</div>
+        </div>
+    </body>
+</html>

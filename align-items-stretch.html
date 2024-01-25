@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container{
+                border: solid 1px red;
+                padding: 10px;
+            }
+
+            .item{
+                border: solid 1px blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Align-items: stretch (padrão) - row wrap</h1>
+        <div class="container" 
+        style="
+        min-height: 120px;
+        display: flex;
+        flex-flow: row wrap;  /* (row) Padrão não era necessario colocar */
+        justify-content: flex-start; /* Padrão não era necessario colocar */
+        align-items: stretch;  /* Padrão não era necessario colocar */
+        "
+        >
+            <div class="item">Item <br>1<br><br>-<br>Multilinha</div>
+            <div class="item">Item 2 - Multilinha</div>
+            <div class="item">Item 3 - Multilinha</div>
+            <div class="item">Item 4 - Multilinha</div>
+            <div class="item">Item 5 - Multilinha</div>
+            <div class="item">Item 6 - Multilinha</div>
+            <div class="item">Item 7 - Multilinha</div>
+        </div>
+
+        <h1>Align-items: stretch (padrão) - column wrap</h1>
+        <div class="container" 
+        style="
+        min-height: 120px;
+        max-height: 120px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start; /* Padrão não era necessario colocar */
+        align-items: stretch;  /* Padrão não era necessario colocar */
+        "
+        >
+            <div class="item">Item <br>1<br><br>-<br>Multilinha</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+            <div class="item">Item 7</div>
+        </div>
+    </body>
+</html>
